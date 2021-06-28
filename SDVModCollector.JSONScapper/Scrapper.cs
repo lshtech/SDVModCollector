@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Newtonsoft.Json;
+using SDVModCollector.Templates;
 
 namespace SDVModCollector.JSONScraper
 {
@@ -20,7 +21,7 @@ namespace SDVModCollector.JSONScraper
 
       foreach (var manifest in manifestCollection)
       {
-        if (manifest.Value.ContentPackFor.UniqueId.ToLower() == "spacechase0.jsonassets")
+        if (manifest.Value.ContentPackFor.UniqueId.ToLower() == Constants.JsonAssets)
         {
 
         }
