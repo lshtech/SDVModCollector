@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>SDVModCollector.JSONScraper</AssemblyName>
+    <RootNamespace>SDVModCollector.JSONScraper</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SDVModCollector.Templates.JsonAssets\SDVModCollector.Templates.JsonAssets.csproj" />
+    <ProjectReference Include="..\SDVModCollector.Templates\SDVModCollector.Templates.csproj" />
+  </ItemGroup>
+
+</Project>
