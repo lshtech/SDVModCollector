@@ -1,4 +1,4 @@
-﻿namespace SDVModCollector.Templates.JsonAssets
+﻿namespace SDVModCollector.Templates.JsonAssets.Templates.Shared
 {
   public class Ingredient
   {

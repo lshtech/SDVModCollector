@@ -2,6 +2,6 @@
 {
   public interface ITemplateFactory
   {
-    ITemplate CreateTemplate(Manifest manifest, string jsonPath);
+    (string type, ITemplate deserializedObject) CreateTemplate(Manifest manifest, string jsonPath);
   }
 }

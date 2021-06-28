@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using Newtonsoft.Json;
@@ -9,43 +10,72 @@ namespace SDVModCollector.JSONScraper
 {
   public static class Scraper
   {
-    public static void Scrape(string modsPath)
+    public static ModCollection Scrape(string modsPath)
     {
+      var collection = new ModCollection(modsPath);
       var manifestCollection = GetManifests(modsPath);
 
-      var contentPackTypes = manifestCollection
-        .Where(m => !string.IsNullOrEmpty(m.Value.ContentPackFor.UniqueId))
-        .Select(m => m.Value.ContentPackFor.UniqueId)
-        .Distinct(StringComparer.CurrentCultureIgnoreCase)
-        .OrderBy(c => c);
-
-      foreach (var manifest in manifestCollection)
+      IDictionary<string, FactoryAbstract> factories = new Dictionary<string, FactoryAbstract>();
+      foreach (var (modId, manifest) in manifestCollection)
       {
-        if (manifest.Value.ContentPackFor.UniqueId.ToLower() == Constants.JsonAssets)
+        if (manifest.ContentPackFor.UniqueId == null) continue;
+        if (!factories.ContainsKey(manifest.ContentPackFor.LowerUniqueId))
         {
-
+          var factory = manifest.CreateTemplateFactory();
+          if (factory == null)
+            continue;
+          factories.Add((KeyValuePair<string, FactoryAbstract>) factory);
         }
-      }      
+
+        var files = factories[manifest.ContentPackFor.LowerUniqueId].GetJsonFiles(manifest.BaseDirectory);
+        var contentPack = new ContentPack(manifest);
+        foreach (var file in files)
+        {
+          try
+          {
+            contentPack.Add(factories[manifest.ContentPackFor.LowerUniqueId].CreateTemplate(manifest, file));
+          }
+          catch (Exception ex)
+          {
+            Debug.WriteLine($"Error parsing {file}");
+          }
+        }
+        collection.ContentPacks.Add(contentPack);
+      }
+
+      return collection;
     }
 
     private static Dictionary<string, Manifest> GetManifests(string modsPath)
     {
-      var manifests = Directory.EnumerateFiles(modsPath, "manifest.json", SearchOption.AllDirectories);
+      var manifests = Directory
+        .EnumerateFiles(modsPath, "manifest.json", SearchOption.AllDirectories)
+        .Where(f => !f.Contains($"{modsPath}\\."));
       var manifestCollection = new Dictionary<string, Manifest>();
       foreach (var manifest in manifests)
       {
         try
         {
-          manifestCollection.Add(manifest, JsonConvert.DeserializeObject<Manifest>(File.ReadAllText(manifest)));
+          var manifestObject = JsonConvert
+            .DeserializeObject<Manifest>(File.ReadAllText(manifest)
+              .Replace('“', '"').Replace('”', '"'))
+            .AddPath(manifest);
+          manifestCollection.Add(manifestObject.UniqueId, manifestObject);
         }
         catch (Exception ex)
         {
-          Console.WriteLine(manifest);
-          Console.WriteLine(ex.InnerException?.Message);
+          Debug.WriteLine(manifest);
+          Debug.WriteLine(ex.InnerException?.Message);
         }
       }
 
       return manifestCollection;
+    }
+
+    private static Manifest AddPath(this Manifest item, string filePath)
+    {
+      item.FilePath = filePath;
+      return item;
     }
   }
 

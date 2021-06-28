@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDVModCollector", "SDVModCollector\SDVModCollector.csproj", "{51F344A0-7AA3-40B1-8BBE-C45B23EE2856}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDVModCollector", "SDVModCollector\SDVModCollector.csproj", "{51F344A0-7AA3-40B1-8BBE-C45B23EE2856}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDVModCollector.JSONScapper", "SDVModCollector.JSONScapper\SDVModCollector.JSONScapper.csproj", "{3B2CDA6E-743D-45AA-96D5-9FFAEFED3A22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDVModCollector.JSONScapper", "SDVModCollector.JSONScapper\SDVModCollector.JSONScapper.csproj", "{3B2CDA6E-743D-45AA-96D5-9FFAEFED3A22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDVModCollector.Templates.JsonAssets", "SDVModCollector.Templates.JsonAssets\SDVModCollector.Templates.JsonAssets.csproj", "{C86BFD6C-D80F-445E-8071-85C02F61AF60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDVModCollector.Templates.JsonAssets", "SDVModCollector.Templates.JsonAssets\SDVModCollector.Templates.JsonAssets.csproj", "{C86BFD6C-D80F-445E-8071-85C02F61AF60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDVModCollector.Collection", "SDVModCollector.Collection\SDVModCollector.Collection.csproj", "{DA02299C-99B8-420C-BFA3-0F4FBE1E1942}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDVModCollector.Templates", "SDVModCollector.Templates\SDVModCollector.Templates.csproj", "{E778A037-A667-4DFA-86F5-49713934D5DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDVModCollector.Templates", "SDVModCollector.Templates\SDVModCollector.Templates.csproj", "{E778A037-A667-4DFA-86F5-49713934D5DB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDVModCollector.Templates.BAGI", "SDVModCollector.Templates.BAGI\SDVModCollector.Templates.BAGI.csproj", "{9CE5FD9D-94AD-4142-9851-8FC9298773B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDVModCollector.Templates.BFAV", "SDVModCollector.Templates.BFAV\SDVModCollector.Templates.BFAV.csproj", "{FBB380A4-EEC9-4DD4-A875-D731D7217851}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,14 +33,18 @@ Global
 		{C86BFD6C-D80F-445E-8071-85C02F61AF60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C86BFD6C-D80F-445E-8071-85C02F61AF60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C86BFD6C-D80F-445E-8071-85C02F61AF60}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DA02299C-99B8-420C-BFA3-0F4FBE1E1942}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DA02299C-99B8-420C-BFA3-0F4FBE1E1942}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DA02299C-99B8-420C-BFA3-0F4FBE1E1942}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DA02299C-99B8-420C-BFA3-0F4FBE1E1942}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E778A037-A667-4DFA-86F5-49713934D5DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E778A037-A667-4DFA-86F5-49713934D5DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E778A037-A667-4DFA-86F5-49713934D5DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E778A037-A667-4DFA-86F5-49713934D5DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CE5FD9D-94AD-4142-9851-8FC9298773B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CE5FD9D-94AD-4142-9851-8FC9298773B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CE5FD9D-94AD-4142-9851-8FC9298773B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CE5FD9D-94AD-4142-9851-8FC9298773B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBB380A4-EEC9-4DD4-A875-D731D7217851}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBB380A4-EEC9-4DD4-A875-D731D7217851}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBB380A4-EEC9-4DD4-A875-D731D7217851}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBB380A4-EEC9-4DD4-A875-D731D7217851}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

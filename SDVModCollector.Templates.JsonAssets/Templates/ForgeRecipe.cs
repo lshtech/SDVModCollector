@@ -1,10 +1,7 @@
-﻿namespace SDVModCollector.Templates.JsonAssets
+﻿namespace SDVModCollector.Templates.JsonAssets.Templates
 {
-  public class ForgeRecipe
+  public class ForgeRecipe : ObjectAbstract
   {
-    public string EnableWithMod { get; set; }
-    public string DisableWithMod { get; set; }
-
     public string BaseItemName { get; set; } // Checks by Item.Name, so supports anything
     public string IngredientContextTag { get; set; }
     public int CinderShardCost { get; set; }

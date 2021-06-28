@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 
 namespace SDVModCollector.Templates
 {
@@ -12,27 +13,10 @@ namespace SDVModCollector.Templates
     public ContentPackFor ContentPackFor { get; set; }
     public string EntryDll { get; set; }
     public string MinimumApiVersion { get; set; }
-    public IEnumerable<string> UpdateKeys { get; set; }
     public ModUpdater ModUpdater { get; set; }
     public IEnumerable<Dependency> Dependencies { get; set; }
-  }
-
-  public struct ContentPackFor
-  {
-    public string UniqueId { get; set; }
-    public string MinimumVersion { get; set; }
-  }
-  public struct Dependency
-  {
-    public string UniqueId { get; set; }
-    public bool IsRequired { get; set; }
-  }
-
-  public struct ModUpdater
-  {
-    public string Repository { get; set; }
-    public string User { get; set; }
-    public string Directory { get; set; }
-    public string ModFolder { get; set; }
+    public string FilePath { get; set; }
+    public string BaseDirectory => new FileInfo(FilePath).DirectoryName;
+    public IEnumerable<string> UpdateKeys { get; set; } = new List<string>();
   }
 }

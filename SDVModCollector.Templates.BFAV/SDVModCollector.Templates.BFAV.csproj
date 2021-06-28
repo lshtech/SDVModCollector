@@ -2,8 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <AssemblyName>SDVModCollector.JSONScraper</AssemblyName>
-    <RootNamespace>SDVModCollector.JSONScraper</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,8 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SDVModCollector.Templates.BAGI\SDVModCollector.Templates.BAGI.csproj" />
-    <ProjectReference Include="..\SDVModCollector.Templates.JsonAssets\SDVModCollector.Templates.JsonAssets.csproj" />
     <ProjectReference Include="..\SDVModCollector.Templates\SDVModCollector.Templates.csproj" />
   </ItemGroup>
 

@@ -1,14 +1,19 @@
 ﻿using System.Collections.Generic;
+using SDVModCollector.Templates.JsonAssets.Templates.Shared;
 
-namespace SDVModCollector.Templates.JsonAssets
+namespace SDVModCollector.Templates.JsonAssets.Templates
 {
   public class Fence : ObjectAbstract
   {
     public enum ToolTypes
     {
       Axe,
-      Pickaxe,
+      Pickaxe
     }
+
+    public Dictionary<string, string> DescriptionLocalization = new();
+
+    public Dictionary<string, string> NameLocalization = new();
 
     public string Description { get; set; }
 
@@ -24,12 +29,10 @@ namespace SDVModCollector.Templates.JsonAssets
     public bool CanPurchase { get; set; } = false;
     public int PurchasePrice { get; set; }
     public string PurchaseFrom { get; set; } = "Robin";
-    public IList<string> PurchaseRequirements { get; set; } = new List<string>();
-    public IList<PurchaseData> AdditionalPurchaseData { get; set; } = new List<PurchaseData>();
+    public IList<string> PurchaseRequirements { get; set; } 
+    public IList<PurchaseData> AdditionalPurchaseData { get; set; } 
 
-    public Dictionary<string, string> NameLocalization = new Dictionary<string, string>();
-    public Dictionary<string, string> DescriptionLocalization = new Dictionary<string, string>();
-
-    public int GetObjectId() { return id; }
+    public string FenceImage => GetImage("fence");
+    public string ObjectImage => GetImage("object");
   }
 }

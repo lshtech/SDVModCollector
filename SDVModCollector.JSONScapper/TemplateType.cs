@@ -1,13 +1,17 @@
 ﻿using System.Collections.Generic;
-using SDVModCollector.Templates.JsonAssets;
+using SDVModCollector.Templates;
 
 namespace SDVModCollector.JSONScraper
 {
   public class TemplateType
   {
-    public string Name { get; set; }
+    public TemplateType(string name)
+    {
+      Name = name;
+      Templates = new Dictionary<string, ITemplate>();
+    }
+    public string Name { get; }
 
-    public IDictionary<string, IEnumerable<ITemplate>> Templates =>
-      new SortedDictionary<string, IEnumerable<ITemplate>>();
+    public IDictionary<string, ITemplate> Templates { get; set; }
   }
 }

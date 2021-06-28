@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using SDVModCollector.JSONScraper;
 
 namespace SDVModCollector
 {
@@ -10,7 +11,8 @@ namespace SDVModCollector
     public MainWindow()
     {
       InitializeComponent();
-      var collection = new Collection.Collection("C:\\Program Files (x86)\\Steam\\steamapps\\common\\Stardew Valley\\Mods");
+      var collection = Scraper.Scrape(("y:\\"));
+      var x = collection;
     }
   }
 }
