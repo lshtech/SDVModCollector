@@ -10,10 +10,15 @@ using SDVModCollector.Templates.CustomChores;
 using SDVModCollector.Templates.CustomMusic;
 using SDVModCollector.Templates.FarmTypeManager;
 using SDVModCollector.Templates.JsonAssets;
+using SDVModCollector.Templates.MailFrameworkMod;
 using SDVModCollector.Templates.MillerTime;
+using SDVModCollector.Templates.MoreGrass;
 using SDVModCollector.Templates.MultiYieldCrops;
 using SDVModCollector.Templates.ProducerFrameworkMod;
+using SDVModCollector.Templates.QuestFramework;
 using SDVModCollector.Templates.ShopTileFramework;
+using SDVModCollector.Templates.TMXLoader;
+using SDVModCollector.Templates.TrainStation;
 
 namespace SDVModCollector.JSONScraper
 {
@@ -53,18 +58,33 @@ namespace SDVModCollector.JSONScraper
         case Constants.JsonAssets:
           return new KeyValuePair<string, FactoryAbstract>
             (Constants.JsonAssets, new JsonAssetsFactory());
+        case Constants.MailFrameworkMod:
+          return new KeyValuePair<string, FactoryAbstract>
+            (Constants.MailFrameworkMod, new MailFrameworkMod());
         case Constants.MillerTime:
           return new KeyValuePair<string, FactoryAbstract>
             (Constants.MillerTime, new MillerTimeFactory());
+        case Constants.MoreGrass:
+          return new KeyValuePair<string, FactoryAbstract>
+            (Constants.MoreGrass, new MoreGrassFactory());
         case Constants.MultiYieldCrops:
           return new KeyValuePair<string, FactoryAbstract>
             (Constants.MultiYieldCrops, new MultiYieldCropsFactory());
         case Constants.ProducerFrameworkMod:
           return new KeyValuePair<string, FactoryAbstract>
             (Constants.ProducerFrameworkMod, new ProducerFrameworkModFactory());
+        case Constants.QuestFramework:
+          return new KeyValuePair<string, FactoryAbstract>
+            (Constants.QuestFramework, new QuestFrameworkFactory());
         case Constants.ShopTileFramework:
           return new KeyValuePair<string, FactoryAbstract>
             (Constants.ShopTileFramework, new ShopTileFrameworkFactory());
+        case Constants.TMXLoader:
+          return new KeyValuePair<string, FactoryAbstract>
+            (Constants.TMXLoader, new TMXLoaderFactory());
+        case Constants.TrainStation:
+          return new KeyValuePair<string, FactoryAbstract>
+            (Constants.TrainStation, new TrainStationFactory());
         default:
           return null;
       }

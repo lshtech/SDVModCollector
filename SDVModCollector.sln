@@ -27,17 +27,29 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDVModCollector.Templates.C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDVModCollector.Templates.CCRM", "SDVModCollector.Templates.CCRM\SDVModCollector.Templates.CCRM.csproj", "{EDEF242F-4D24-444C-A096-8A5EBE920569}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDVModCollector.Templates.ContentPatcher", "SDVModCollector.Templates.ContentPatcher\SDVModCollector.Templates.ContentPatcher.csproj", "{CB28C813-998B-4D91-B5AF-866F292A220F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDVModCollector.Templates.ContentPatcher", "SDVModCollector.Templates.ContentPatcher\SDVModCollector.Templates.ContentPatcher.csproj", "{CB28C813-998B-4D91-B5AF-866F292A220F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDVModCollector.Templates.ShopTileFramework", "SDVModCollector.Templates.ShopTileFramework\SDVModCollector.Templates.ShopTileFramework.csproj", "{50F6F8C0-E467-43D7-B46D-D26013F9B32F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDVModCollector.Templates.ShopTileFramework", "SDVModCollector.Templates.ShopTileFramework\SDVModCollector.Templates.ShopTileFramework.csproj", "{50F6F8C0-E467-43D7-B46D-D26013F9B32F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDVModCollector.Templates.MillerTime", "SDVModCollector.Templates.MillerTime\SDVModCollector.Templates.MillerTime.csproj", "{331BC7D7-6D7B-431D-B93E-FB4B3926C1B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDVModCollector.Templates.MillerTime", "SDVModCollector.Templates.MillerTime\SDVModCollector.Templates.MillerTime.csproj", "{331BC7D7-6D7B-431D-B93E-FB4B3926C1B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDVModCollector.Templates.MultiYieldCrops", "SDVModCollector.Templates.MultiYeildCrops\SDVModCollector.Templates.MultiYieldCrops.csproj", "{B5585145-9D6E-4D0B-B909-D7071388B87E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDVModCollector.Templates.MultiYieldCrops", "SDVModCollector.Templates.MultiYeildCrops\SDVModCollector.Templates.MultiYieldCrops.csproj", "{B5585145-9D6E-4D0B-B909-D7071388B87E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDVModCollector.Templates.ProducerFrameworkMod", "SDVModCollector.Templates.ProducerFrameworkMod\SDVModCollector.Templates.ProducerFrameworkMod.csproj", "{E249C8F7-5003-4249-B916-55C4AE67DA4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDVModCollector.Templates.ProducerFrameworkMod", "SDVModCollector.Templates.ProducerFrameworkMod\SDVModCollector.Templates.ProducerFrameworkMod.csproj", "{E249C8F7-5003-4249-B916-55C4AE67DA4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDVModCollector.Templates.FarmTypeManager", "SDVModCollector.Templates.FarmTypeManager\SDVModCollector.Templates.FarmTypeManager.csproj", "{D4966CC6-012E-4102-A0B7-C22D3AAD11F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDVModCollector.Templates.FarmTypeManager", "SDVModCollector.Templates.FarmTypeManager\SDVModCollector.Templates.FarmTypeManager.csproj", "{D4966CC6-012E-4102-A0B7-C22D3AAD11F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDVModCollector.Templates.MailFrameworkMod", "SDVModCollector.Templates.MailFrameworkMod\SDVModCollector.Templates.MailFrameworkMod.csproj", "{58148DDD-A250-44C0-B4CB-A3A60A2488F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDVModCollector.Templates.MoreGrass", "SDVModCollector.Templates.MoreGrass\SDVModCollector.Templates.MoreGrass.csproj", "{EE09DEAC-32AC-488F-8EF9-C7659F3824F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDVModCollector.Templates.TrainStation", "SDVModCollector.Templates.TrainStation\SDVModCollector.Templates.TrainStation.csproj", "{EFB71D8D-847F-4BB2-89CA-EAA52C50B7E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDVModCollector.Templates.QuestFramework", "SDVModCollector.Templates.QuestFramework\SDVModCollector.Templates.QuestFramework.csproj", "{CCA27C5B-B1F7-4093-A560-87A892F524BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDVModCollector.Templates.TMXLoader", "SDVModCollector.Templates.TMXLoader\SDVModCollector.Templates.TMXLoader.csproj", "{812BAF93-4A5D-43A5-BEDC-E5750CB05DD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDVModCollector.Data", "SDVModCollector.Data\SDVModCollector.Data.csproj", "{B86CAC7E-876B-4FF8-B5D7-BF579602E357}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +129,30 @@ Global
 		{D4966CC6-012E-4102-A0B7-C22D3AAD11F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4966CC6-012E-4102-A0B7-C22D3AAD11F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4966CC6-012E-4102-A0B7-C22D3AAD11F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58148DDD-A250-44C0-B4CB-A3A60A2488F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58148DDD-A250-44C0-B4CB-A3A60A2488F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58148DDD-A250-44C0-B4CB-A3A60A2488F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58148DDD-A250-44C0-B4CB-A3A60A2488F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE09DEAC-32AC-488F-8EF9-C7659F3824F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE09DEAC-32AC-488F-8EF9-C7659F3824F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE09DEAC-32AC-488F-8EF9-C7659F3824F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE09DEAC-32AC-488F-8EF9-C7659F3824F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFB71D8D-847F-4BB2-89CA-EAA52C50B7E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFB71D8D-847F-4BB2-89CA-EAA52C50B7E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFB71D8D-847F-4BB2-89CA-EAA52C50B7E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFB71D8D-847F-4BB2-89CA-EAA52C50B7E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCA27C5B-B1F7-4093-A560-87A892F524BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCA27C5B-B1F7-4093-A560-87A892F524BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCA27C5B-B1F7-4093-A560-87A892F524BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCA27C5B-B1F7-4093-A560-87A892F524BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{812BAF93-4A5D-43A5-BEDC-E5750CB05DD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{812BAF93-4A5D-43A5-BEDC-E5750CB05DD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{812BAF93-4A5D-43A5-BEDC-E5750CB05DD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{812BAF93-4A5D-43A5-BEDC-E5750CB05DD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B86CAC7E-876B-4FF8-B5D7-BF579602E357}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B86CAC7E-876B-4FF8-B5D7-BF579602E357}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B86CAC7E-876B-4FF8-B5D7-BF579602E357}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B86CAC7E-876B-4FF8-B5D7-BF579602E357}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

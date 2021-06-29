@@ -13,9 +13,14 @@ namespace SDVModCollector.Templates
     public const string CustomMusic = "platonymous.custommusic";
     public const string FarmTypeManager = "esca.farmtypemanager";
     public const string JsonAssets = "spacechase0.jsonassets";
+    public const string MailFrameworkMod = "digus.mailframeworkmod";
     public const string MillerTime = "satozaki.millertime";
+    public const string MoreGrass = "epicbellyflop45.moregrass";
     public const string MultiYieldCrops = "cherry.multiyieldcrops";
     public const string ProducerFrameworkMod = "digus.producerframeworkmod";
+    public const string QuestFramework = "purrplingcat.questframework";
     public const string ShopTileFramework = "cherry.shoptileframework";
+    public const string TMXLoader = "platonymous.tmxloader";
+    public const string TrainStation = "cherry.trainstation";
   }
 }

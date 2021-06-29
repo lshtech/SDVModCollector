@@ -18,10 +18,15 @@
     <ProjectReference Include="..\SDVModCollector.Templates.CustomMusic\SDVModCollector.Templates.CustomMusic.csproj" />
     <ProjectReference Include="..\SDVModCollector.Templates.FarmTypeManager\SDVModCollector.Templates.FarmTypeManager.csproj" />
     <ProjectReference Include="..\SDVModCollector.Templates.JsonAssets\SDVModCollector.Templates.JsonAssets.csproj" />
+    <ProjectReference Include="..\SDVModCollector.Templates.MailFrameworkMod\SDVModCollector.Templates.MailFrameworkMod.csproj" />
     <ProjectReference Include="..\SDVModCollector.Templates.MillerTime\SDVModCollector.Templates.MillerTime.csproj" />
+    <ProjectReference Include="..\SDVModCollector.Templates.MoreGrass\SDVModCollector.Templates.MoreGrass.csproj" />
     <ProjectReference Include="..\SDVModCollector.Templates.MultiYeildCrops\SDVModCollector.Templates.MultiYieldCrops.csproj" />
     <ProjectReference Include="..\SDVModCollector.Templates.ProducerFrameworkMod\SDVModCollector.Templates.ProducerFrameworkMod.csproj" />
+    <ProjectReference Include="..\SDVModCollector.Templates.QuestFramework\SDVModCollector.Templates.QuestFramework.csproj" />
     <ProjectReference Include="..\SDVModCollector.Templates.ShopTileFramework\SDVModCollector.Templates.ShopTileFramework.csproj" />
+    <ProjectReference Include="..\SDVModCollector.Templates.TMXLoader\SDVModCollector.Templates.TMXLoader.csproj" />
+    <ProjectReference Include="..\SDVModCollector.Templates.TrainStation\SDVModCollector.Templates.TrainStation.csproj" />
     <ProjectReference Include="..\SDVModCollector.Templates\SDVModCollector.Templates.csproj" />
   </ItemGroup>
 
