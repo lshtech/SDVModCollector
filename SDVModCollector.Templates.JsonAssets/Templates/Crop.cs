@@ -13,9 +13,9 @@ namespace SDVModCollector.Templates.JsonAssets.Templates
       Paddy
     }
 
-    public Dictionary<string, string> SeedDescriptionLocalization = new();
+    public Dictionary<string, string> SeedDescriptionLocalization { get; set; }
 
-    public Dictionary<string, string> SeedNameLocalization = new();
+    public Dictionary<string, string> SeedNameLocalization { get; set; }
     public object Product { get; set; }
     public string SeedName { get; set; }
     public string SeedDescription { get; set; }

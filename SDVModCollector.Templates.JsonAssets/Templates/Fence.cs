@@ -11,9 +11,9 @@ namespace SDVModCollector.Templates.JsonAssets.Templates
       Pickaxe
     }
 
-    public Dictionary<string, string> DescriptionLocalization = new();
+    public Dictionary<string, string> DescriptionLocalization { get; set; }
 
-    public Dictionary<string, string> NameLocalization = new();
+    public Dictionary<string, string> NameLocalization { get; set; }
 
     public string Description { get; set; }
 

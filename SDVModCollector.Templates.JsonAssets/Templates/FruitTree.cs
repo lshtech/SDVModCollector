@@ -5,10 +5,9 @@ namespace SDVModCollector.Templates.JsonAssets.Templates
 {
   public class FruitTree : ObjectAbstract
   {
-    internal Object sapling;
-    public Dictionary<string, string> SaplingDescriptionLocalization = new();
+    public Dictionary<string, string> SaplingDescriptionLocalization { get; set; }
 
-    public Dictionary<string, string> SaplingNameLocalization = new();
+    public Dictionary<string, string> SaplingNameLocalization { get; set; }
     public object Product { get; set; }
     public string SaplingName { get; set; }
     public string SaplingDescription { get; set; }

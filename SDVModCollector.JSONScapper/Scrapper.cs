@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using Newtonsoft.Json;
+using SDVModCollector.JSONHelper;
 using SDVModCollector.Templates;
 
 namespace SDVModCollector.JSONScraper
@@ -37,6 +37,7 @@ namespace SDVModCollector.JSONScraper
           }
           catch (Exception ex)
           {
+            var x = ex.GetType();
             Debug.WriteLine($"Error parsing {file}");
           }
         }
@@ -56,9 +57,8 @@ namespace SDVModCollector.JSONScraper
       {
         try
         {
-          var manifestObject = JsonConvert
-            .DeserializeObject<Manifest>(File.ReadAllText(manifest)
-              .Replace('“', '"').Replace('”', '"'))
+          var manifestObject = Helper
+            .DeserializeObject<Manifest>(manifest)
             .AddPath(manifest);
           manifestCollection.Add(manifestObject.UniqueId, manifestObject);
         }

@@ -2,20 +2,18 @@
 using System.IO;
 using SDVModCollector.JSONHelper;
 
-// ReSharper disable IdentifierTypo
-
-namespace SDVModCollector.Templates.BAGI
+namespace SDVModCollector.Templates.CustomChores
 {
-  public class BAGIFactory : FactoryAbstract
+  public class CustomChoresFactory : FactoryAbstract
   {
     public override (string type, ITemplate deserializedObject) CreateTemplate(Manifest manifest, string jsonPath)
     {
-      return ("BAGI", Helper.DeserializeObject<Data>(jsonPath));
+      return ("CustomChores", Helper.DeserializeObject<Chore>(jsonPath));
     }
 
     public override IEnumerable<string> GetJsonFiles(string modsPath)
     {
-      return new[] {Path.Combine(modsPath, "data.json")};
+      return new[] { Path.Combine(modsPath, "chore.json") };
     }
   }
 }

@@ -5,9 +5,9 @@ namespace SDVModCollector.Templates.JsonAssets.Templates
 {
   public class Boots : ObjectAbstract
   {
-    public Dictionary<string, string> DescriptionLocalization = new();
+    public Dictionary<string, string> DescriptionLocalization { get; set; }
 
-    public Dictionary<string, string> NameLocalization = new();
+    public Dictionary<string, string> NameLocalization { get; set; }
     public string Description { get; set; }
 
     public int Price { get; set; }

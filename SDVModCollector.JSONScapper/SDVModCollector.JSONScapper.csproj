@@ -7,11 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\SDVModCollector.JSONHelper\SDVModCollector.JSONHelper.csproj" />
     <ProjectReference Include="..\SDVModCollector.Templates.BAGI\SDVModCollector.Templates.BAGI.csproj" />
+    <ProjectReference Include="..\SDVModCollector.Templates.BFAV\SDVModCollector.Templates.BFAV.csproj" />
+    <ProjectReference Include="..\SDVModCollector.Templates.CCCB\SDVModCollector.Templates.CCCB.csproj" />
+    <ProjectReference Include="..\SDVModCollector.Templates.CCM\SDVModCollector.Templates.CCM.csproj" />
+    <ProjectReference Include="..\SDVModCollector.Templates.CCRM\SDVModCollector.Templates.CCRM.csproj" />
+    <ProjectReference Include="..\SDVModCollector.Templates.CustomChores\SDVModCollector.Templates.CustomChores.csproj" />
+    <ProjectReference Include="..\SDVModCollector.Templates.CustomMusic\SDVModCollector.Templates.CustomMusic.csproj" />
     <ProjectReference Include="..\SDVModCollector.Templates.JsonAssets\SDVModCollector.Templates.JsonAssets.csproj" />
     <ProjectReference Include="..\SDVModCollector.Templates\SDVModCollector.Templates.csproj" />
   </ItemGroup>

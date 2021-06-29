@@ -5,9 +5,9 @@ namespace SDVModCollector.Templates.JsonAssets.Templates
 {
   public class BigCraftable : ObjectAbstract
   {
-    public Dictionary<string, string> DescriptionLocalization = new();
+    public Dictionary<string, string> DescriptionLocalization { get; set; }
 
-    public Dictionary<string, string> NameLocalization = new();
+    public Dictionary<string, string> NameLocalization { get; set; }
     public Recipe Recipe { get; set; }
     public bool ReserveNextIndex { get; set; } = false; // Deprecated
     public int ReserveExtraIndexCount { get; set; } = 0;

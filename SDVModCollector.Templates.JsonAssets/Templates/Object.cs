@@ -6,14 +6,14 @@ namespace SDVModCollector.Templates.JsonAssets.Templates
 {
   public class Object : ObjectAbstract
   {
-    public List<string> ContextTags = new();
-    public Dictionary<string, string> DescriptionLocalization = new();
-    public FoodBuffs EdibleBuffs = new();
+    public List<string> ContextTags { get; set; }
+    public Dictionary<string, string> DescriptionLocalization { get; set; }
+    public FoodBuffs EdibleBuffs { get; set; }
 
 
     public GiftTastes GiftTastes;
 
-    public Dictionary<string, string> NameLocalization = new();
+    public Dictionary<string, string> NameLocalization { get; set; }
 
 
     public string Description { get; set; }

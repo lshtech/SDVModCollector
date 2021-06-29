@@ -2,11 +2,20 @@
 {
   public class ForgeRecipe : ObjectAbstract
   {
-    public string BaseItemName { get; set; } // Checks by Item.Name, so supports anything
+    private string _resultItemName;
+    public string BaseItemName { get; set; } 
     public string IngredientContextTag { get; set; }
     public int CinderShardCost { get; set; }
 
-    public string ResultItemName { get; set; } // Uses Utility.fuzzyItemSearch, so go nuts
+    public string ResultItemName
+    {
+      get => _resultItemName;
+      set
+      {
+        Name = value;
+        _resultItemName = value;
+      }
+    }
 
     public string[] AbleToForgeConditions { get; set; }
   }

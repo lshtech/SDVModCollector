@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Net.Mail;
 using SDVModCollector.Templates;
 
 namespace SDVModCollector.JSONScraper
@@ -24,7 +27,19 @@ namespace SDVModCollector.JSONScraper
         var newType = new TemplateType(type);
         Types.Add(type, newType);
       }
-      Types[type].Templates.Add(deserializedObject.Name, deserializedObject);
+
+      try
+      {
+        Types[type].Templates.Add(Types[type].Templates
+            .ContainsKey(deserializedObject.Name)
+            ? deserializedObject.Name + "Alt"
+            : deserializedObject.Name,
+          deserializedObject);
+      }
+      catch (Exception ex)
+      {
+        Debug.WriteLine(ex.Message);
+      }
     }
   }
 }
