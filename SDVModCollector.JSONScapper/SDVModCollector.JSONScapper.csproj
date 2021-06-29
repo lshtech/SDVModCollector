@@ -13,9 +13,15 @@
     <ProjectReference Include="..\SDVModCollector.Templates.CCCB\SDVModCollector.Templates.CCCB.csproj" />
     <ProjectReference Include="..\SDVModCollector.Templates.CCM\SDVModCollector.Templates.CCM.csproj" />
     <ProjectReference Include="..\SDVModCollector.Templates.CCRM\SDVModCollector.Templates.CCRM.csproj" />
+    <ProjectReference Include="..\SDVModCollector.Templates.ContentPatcher\SDVModCollector.Templates.ContentPatcher.csproj" />
     <ProjectReference Include="..\SDVModCollector.Templates.CustomChores\SDVModCollector.Templates.CustomChores.csproj" />
     <ProjectReference Include="..\SDVModCollector.Templates.CustomMusic\SDVModCollector.Templates.CustomMusic.csproj" />
+    <ProjectReference Include="..\SDVModCollector.Templates.FarmTypeManager\SDVModCollector.Templates.FarmTypeManager.csproj" />
     <ProjectReference Include="..\SDVModCollector.Templates.JsonAssets\SDVModCollector.Templates.JsonAssets.csproj" />
+    <ProjectReference Include="..\SDVModCollector.Templates.MillerTime\SDVModCollector.Templates.MillerTime.csproj" />
+    <ProjectReference Include="..\SDVModCollector.Templates.MultiYeildCrops\SDVModCollector.Templates.MultiYieldCrops.csproj" />
+    <ProjectReference Include="..\SDVModCollector.Templates.ProducerFrameworkMod\SDVModCollector.Templates.ProducerFrameworkMod.csproj" />
+    <ProjectReference Include="..\SDVModCollector.Templates.ShopTileFramework\SDVModCollector.Templates.ShopTileFramework.csproj" />
     <ProjectReference Include="..\SDVModCollector.Templates\SDVModCollector.Templates.csproj" />
   </ItemGroup>
 

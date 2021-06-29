@@ -10,7 +10,7 @@ namespace SDVModCollector.Templates.CCM.Templates
       Data = data;
     }
 
-    public string Name { get; set; } = "CCM";
+    public string Name { get; set; } = "CustomCaskMod";
     public IDictionary<string, double> Data { get; set; }
   }
 }

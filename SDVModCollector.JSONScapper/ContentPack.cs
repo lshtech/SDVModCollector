@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Net.Mail;
 using SDVModCollector.Templates;
 
 namespace SDVModCollector.JSONScraper
@@ -15,6 +14,8 @@ namespace SDVModCollector.JSONScraper
     }
     public Manifest Manifest { get; }
     public string Name => Manifest.Name;
+
+    public override string ToString() => Name;
     public string ModId => Manifest.UniqueId;
     public string PackType => Manifest.ContentPackFor.UniqueId;
     public IDictionary<string, TemplateType> Types { get; set; }

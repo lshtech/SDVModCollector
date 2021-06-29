@@ -12,9 +12,9 @@ namespace SDVModCollector.Templates.JsonAssets.Templates
     public bool ShowHair { get; set; }
     public bool IgnoreHairstyleOffset { get; set; }
 
-    public bool CanPurchase { get; set; } = true;
+    public bool CanPurchase { get; set; }
 
-    public string Metadata { get; set; } = "";
+    public string Metadata { get; set; }
 
     public string HatImage => GetImage("hat");
   }

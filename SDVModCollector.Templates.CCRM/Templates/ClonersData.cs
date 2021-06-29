@@ -9,7 +9,7 @@ namespace SDVModCollector.Templates.CCRM.Templates
       CloneData = cloneData;
     }
 
-    public string Name { get; set; } = "CCRM";
+    public string Name { get; set; } = "CustomCrystalariumMod";
     public IEnumerable<CloneData> CloneData { get; set; }
   }
 }

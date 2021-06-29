@@ -20,24 +20,24 @@ namespace SDVModCollector.Templates.JsonAssets.Templates
     public string Category { get; set; }
     public string CategoryTextOverride { get; set; }
     public Color CategoryColorOverride { get; set; } = Color.FromArgb(0, 0, 0, 0);
-    public bool IsColored { get; set; } = false;
+    public bool IsColored { get; set; }
 
     public int Price { get; set; }
 
-    public bool CanTrash { get; set; } = true;
-    public bool CanSell { get; set; } = true;
-    public bool CanBeGifted { get; set; } = true;
+    public bool CanTrash { get; set; } 
+    public bool CanSell { get; set; }
+    public bool CanBeGifted { get; set; } 
 
-    public bool HideFromShippingCollection { get; set; } = false;
+    public bool HideFromShippingCollection { get; set; }
 
     public Recipe Recipe { get; set; }
 
+ 
     public int Edibility { get; set; } = -300;
-    public bool EdibleIsDrink { get; set; } = false;
-
-    public bool CanPurchase { get; set; } = false;
+    public bool EdibleIsDrink { get; set; } 
+    public bool CanPurchase { get; set; } 
     public int PurchasePrice { get; set; }
-    public string PurchaseFrom { get; set; } = "Pierre";
+    public string PurchaseFrom { get; set; } 
     public IList<string> PurchaseRequirements { get; set; } 
     public IList<PurchaseData> AdditionalPurchaseData { get; set; } 
 

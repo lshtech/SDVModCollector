@@ -16,7 +16,7 @@ namespace SDVModCollector.Templates.JsonAssets.Templates
 
     public IList<string> SaplingPurchaseRequirements { get; set; } 
     public int SaplingPurchasePrice { get; set; }
-    public string SaplingPurchaseFrom { get; set; } = "Pierre";
+    public string SaplingPurchaseFrom { get; set; }
     public IList<PurchaseData> SaplingAdditionalPurchaseData { get; set; }
   }
 }

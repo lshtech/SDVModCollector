@@ -10,7 +10,7 @@ namespace SDVModCollector.Templates.JsonAssets.Templates
     public IList<string> FirstItemTags { get; set; }
     public IList<string> SecondItemTags { get; set; }
 
-    public bool ConsumeSecondItem { get; set; } = true;
+    public bool ConsumeSecondItem { get; set; } 
 
     public IList<object> CraftedItems
     {

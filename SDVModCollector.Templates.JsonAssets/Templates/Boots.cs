@@ -12,9 +12,9 @@ namespace SDVModCollector.Templates.JsonAssets.Templates
 
     public int Price { get; set; }
 
-    public bool CanPurchase { get; set; } = false;
+    public bool CanPurchase { get; set; } 
     public int PurchasePrice { get; set; }
-    public string PurchaseFrom { get; set; } = "Marlon";
+    public string PurchaseFrom { get; set; } 
     public IList<string> PurchaseRequirements { get; set; }
     public IList<PurchaseData> AdditionalPurchaseData { get; set; } 
 

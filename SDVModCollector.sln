@@ -15,17 +15,29 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDVModCollector.Templates.B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDVModCollector.Templates.BFAV", "SDVModCollector.Templates.BFAV\SDVModCollector.Templates.BFAV.csproj", "{FBB380A4-EEC9-4DD4-A875-D731D7217851}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDVModCollector.Templates.CustomChores", "SDVModCollector.Templates.CustomChores\SDVModCollector.Templates.CustomChores.csproj", "{DEF8D1F9-5D66-4D27-8845-98BD35247D5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDVModCollector.Templates.CustomChores", "SDVModCollector.Templates.CustomChores\SDVModCollector.Templates.CustomChores.csproj", "{DEF8D1F9-5D66-4D27-8845-98BD35247D5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDVModCollector.Templates.CCCB", "SDVModCollector.Templates.CCCB\SDVModCollector.Templates.CCCB.csproj", "{4CF9FDFA-5C02-4473-B720-87AA86BE3B95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDVModCollector.Templates.CCCB", "SDVModCollector.Templates.CCCB\SDVModCollector.Templates.CCCB.csproj", "{4CF9FDFA-5C02-4473-B720-87AA86BE3B95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDVModCollector.JSONHelper", "SDVModCollector.JSONHelper\SDVModCollector.JSONHelper.csproj", "{4A10A664-A1DA-4AE4-A5E1-B6F22E821284}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDVModCollector.JSONHelper", "SDVModCollector.JSONHelper\SDVModCollector.JSONHelper.csproj", "{4A10A664-A1DA-4AE4-A5E1-B6F22E821284}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDVModCollector.Templates.CCM", "SDVModCollector.Templates.CCM\SDVModCollector.Templates.CCM.csproj", "{B93FD676-CB3D-4FA9-8E3F-51E4BE35C561}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDVModCollector.Templates.CCM", "SDVModCollector.Templates.CCM\SDVModCollector.Templates.CCM.csproj", "{B93FD676-CB3D-4FA9-8E3F-51E4BE35C561}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDVModCollector.Templates.CustomMusic", "SDVModCollector.Templates.CustomMusic\SDVModCollector.Templates.CustomMusic.csproj", "{29CC354B-6A74-4A00-BDE7-C2C9EA2C0A89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDVModCollector.Templates.CustomMusic", "SDVModCollector.Templates.CustomMusic\SDVModCollector.Templates.CustomMusic.csproj", "{29CC354B-6A74-4A00-BDE7-C2C9EA2C0A89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDVModCollector.Templates.CCRM", "SDVModCollector.Templates.CCRM\SDVModCollector.Templates.CCRM.csproj", "{EDEF242F-4D24-444C-A096-8A5EBE920569}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDVModCollector.Templates.CCRM", "SDVModCollector.Templates.CCRM\SDVModCollector.Templates.CCRM.csproj", "{EDEF242F-4D24-444C-A096-8A5EBE920569}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDVModCollector.Templates.ContentPatcher", "SDVModCollector.Templates.ContentPatcher\SDVModCollector.Templates.ContentPatcher.csproj", "{CB28C813-998B-4D91-B5AF-866F292A220F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDVModCollector.Templates.ShopTileFramework", "SDVModCollector.Templates.ShopTileFramework\SDVModCollector.Templates.ShopTileFramework.csproj", "{50F6F8C0-E467-43D7-B46D-D26013F9B32F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDVModCollector.Templates.MillerTime", "SDVModCollector.Templates.MillerTime\SDVModCollector.Templates.MillerTime.csproj", "{331BC7D7-6D7B-431D-B93E-FB4B3926C1B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDVModCollector.Templates.MultiYieldCrops", "SDVModCollector.Templates.MultiYeildCrops\SDVModCollector.Templates.MultiYieldCrops.csproj", "{B5585145-9D6E-4D0B-B909-D7071388B87E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDVModCollector.Templates.ProducerFrameworkMod", "SDVModCollector.Templates.ProducerFrameworkMod\SDVModCollector.Templates.ProducerFrameworkMod.csproj", "{E249C8F7-5003-4249-B916-55C4AE67DA4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDVModCollector.Templates.FarmTypeManager", "SDVModCollector.Templates.FarmTypeManager\SDVModCollector.Templates.FarmTypeManager.csproj", "{D4966CC6-012E-4102-A0B7-C22D3AAD11F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +93,30 @@ Global
 		{EDEF242F-4D24-444C-A096-8A5EBE920569}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDEF242F-4D24-444C-A096-8A5EBE920569}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDEF242F-4D24-444C-A096-8A5EBE920569}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB28C813-998B-4D91-B5AF-866F292A220F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB28C813-998B-4D91-B5AF-866F292A220F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB28C813-998B-4D91-B5AF-866F292A220F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB28C813-998B-4D91-B5AF-866F292A220F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50F6F8C0-E467-43D7-B46D-D26013F9B32F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50F6F8C0-E467-43D7-B46D-D26013F9B32F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50F6F8C0-E467-43D7-B46D-D26013F9B32F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50F6F8C0-E467-43D7-B46D-D26013F9B32F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{331BC7D7-6D7B-431D-B93E-FB4B3926C1B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{331BC7D7-6D7B-431D-B93E-FB4B3926C1B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{331BC7D7-6D7B-431D-B93E-FB4B3926C1B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{331BC7D7-6D7B-431D-B93E-FB4B3926C1B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5585145-9D6E-4D0B-B909-D7071388B87E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5585145-9D6E-4D0B-B909-D7071388B87E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5585145-9D6E-4D0B-B909-D7071388B87E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5585145-9D6E-4D0B-B909-D7071388B87E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E249C8F7-5003-4249-B916-55C4AE67DA4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E249C8F7-5003-4249-B916-55C4AE67DA4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E249C8F7-5003-4249-B916-55C4AE67DA4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E249C8F7-5003-4249-B916-55C4AE67DA4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4966CC6-012E-4102-A0B7-C22D3AAD11F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4966CC6-012E-4102-A0B7-C22D3AAD11F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4966CC6-012E-4102-A0B7-C22D3AAD11F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4966CC6-012E-4102-A0B7-C22D3AAD11F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

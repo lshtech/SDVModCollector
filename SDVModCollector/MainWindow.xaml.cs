@@ -11,7 +11,8 @@ namespace SDVModCollector
     public MainWindow()
     {
       InitializeComponent();
-      var collection = Scraper.Scrape("C:\\Program Files (x86)\\Steam\\steamapps\\common\\Stardew Valley\\Mods");
+      var collection = Scraper.Scrape("Y:");
+      //var collection = Scraper.Scrape("C:\\Program Files (x86)\\Steam\\steamapps\\common\\Stardew Valley\\Mods");
       var x = collection;
     }
   }

@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>SDVModCollector.Templates.MultiYieldCrops</AssemblyName>
+    <RootNamespace>SDVModCollector.Templates.MultiYieldCrops</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SDVModCollector.JSONHelper\SDVModCollector.JSONHelper.csproj" />
+    <ProjectReference Include="..\SDVModCollector.Templates\SDVModCollector.Templates.csproj" />
+  </ItemGroup>
+
+</Project>

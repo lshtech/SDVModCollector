@@ -9,7 +9,7 @@ namespace SDVModCollector.Templates.CCCB
   {
     public override (string type, ITemplate deserializedObject) CreateTemplate(Manifest manifest, string jsonPath)
     {
-      return ("CCCB", new Content(
+      return ("ChallengingCommunityCenterBundles", new Content(
         Helper.DeserializeObject<IDictionary<string, IDictionary<string, string>>>(jsonPath)));
     }
 

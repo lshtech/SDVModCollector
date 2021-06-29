@@ -1,4 +1,4 @@
-﻿namespace SDVModCollector.Templates.CustomChores
+﻿namespace SDVModCollector.Templates.CustomChores.Templates
 {
   public class Chore : ITemplate
   {

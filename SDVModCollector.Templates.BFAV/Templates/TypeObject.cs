@@ -1,4 +1,4 @@
-﻿namespace SDVModCollector.Templates.BFAV
+﻿namespace SDVModCollector.Templates.BFAV.Templates
 {
   public class TypeObject
   {

@@ -10,7 +10,7 @@ namespace SDVModCollector.Templates.CCRM
   {
     public override (string type, ITemplate deserializedObject) CreateTemplate(Manifest manifest, string jsonPath)
     {
-      return ("CCRM", new ClonersData(Helper.DeserializeObject<IEnumerable<CloneData>>(jsonPath)));
+      return ("CustomCrystalariumMod", new ClonersData(Helper.DeserializeObject<IEnumerable<CloneData>>(jsonPath)));
     }
 
     public override IEnumerable<string> GetJsonFiles(string modsPath)

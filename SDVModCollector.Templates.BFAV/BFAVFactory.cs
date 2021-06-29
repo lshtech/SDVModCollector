@@ -3,6 +3,7 @@
 using System.Collections.Generic;
 using System.IO;
 using SDVModCollector.JSONHelper;
+using SDVModCollector.Templates.BFAV.Templates;
 
 namespace SDVModCollector.Templates.BFAV
 {

@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using SDVModCollector.JSONHelper;
+using SDVModCollector.Templates.BAGI.Templates;
 
 // ReSharper disable IdentifierTypo
 
@@ -10,7 +11,7 @@ namespace SDVModCollector.Templates.BAGI
   {
     public override (string type, ITemplate deserializedObject) CreateTemplate(Manifest manifest, string jsonPath)
     {
-      return ("BAGI", Helper.DeserializeObject<Data>(jsonPath));
+      return ("BetterArtisanGoodIcons", Helper.DeserializeObject<Data>(jsonPath));
     }
 
     public override IEnumerable<string> GetJsonFiles(string modsPath)

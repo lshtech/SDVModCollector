@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using SDVModCollector.JSONHelper;
+using SDVModCollector.Templates.CustomChores.Templates;
 
 namespace SDVModCollector.Templates.CustomChores
 {

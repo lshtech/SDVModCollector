@@ -13,9 +13,8 @@ namespace SDVModCollector.Templates.JsonAssets.Templates
     public int Price { get; set; }
 
     public Color DefaultColor { get; set; } = Color.FromArgb(255, 235, 203);
-    public bool Dyeable { get; set; } = false;
-
-    public string Metadata { get; set; } = "";
+    public bool Dyeable { get; set; }
+    public string Metadata { get; set; }
 
     public string PantsImage => GetImage("pants");
   }

@@ -23,13 +23,13 @@ namespace SDVModCollector.Templates.JsonAssets.Templates
     public double CritChance { get; set; }
     public double CritMultiplier { get; set; }
 
-    public bool CanPurchase { get; set; } = false;
+    public bool CanPurchase { get; set; }
     public int PurchasePrice { get; set; }
-    public string PurchaseFrom { get; set; } = "Pierre";
+    public string PurchaseFrom { get; set; } 
     public IList<string> PurchaseRequirements { get; set; }
     public IList<PurchaseData> AdditionalPurchaseData { get; set; }
 
-    public bool CanTrash { get; set; } = true;
+    public bool CanTrash { get; set; } 
 
     public string WeaponImage => GetImage("weapon");
   }

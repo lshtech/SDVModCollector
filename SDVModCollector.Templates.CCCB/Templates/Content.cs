@@ -8,7 +8,7 @@ namespace SDVModCollector.Templates.CCCB.Templates
     {
       Contents = contents;
     }
-    public string Name { get; set; } = "CCCB";
+    public string Name { get; set; } = "ChallengingCommunityCenterBundles";
     public IDictionary<string, IDictionary<string, string>> Contents { get; set; }
   }
 }
