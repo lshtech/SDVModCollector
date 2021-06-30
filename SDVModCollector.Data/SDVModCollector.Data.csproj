@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\SDVModCollector.Data.SQLite\SDVModCollector.Data.SQLite.csproj" />
     <ProjectReference Include="..\SDVModCollector.JSONScapper\SDVModCollector.JSONScapper.csproj" />
   </ItemGroup>
 

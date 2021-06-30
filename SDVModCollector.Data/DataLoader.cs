@@ -1,4 +1,5 @@
-﻿using SDVModCollector.JSONScraper;
+﻿using SDVModCollector.Data.SQLite;
+using SDVModCollector.JSONScraper;
 
 namespace SDVModCollector.Data
 {
@@ -6,7 +7,9 @@ namespace SDVModCollector.Data
   {
     public static ModCollection LoadDataFromJson(string modDirectory)
     {
-      return Scraper.Scrape(modDirectory);
+      SqlController.PrepDatabase();
+      return null;
+      //return Scraper.Scrape(modDirectory);
     }
   }
 }
