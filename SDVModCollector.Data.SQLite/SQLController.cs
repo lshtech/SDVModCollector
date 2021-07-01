@@ -3,6 +3,7 @@ using System.Data;
 using System.Diagnostics;
 using System.IO;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 using Microsoft.Data.Sqlite;
 
 namespace SDVModCollector.Data.SQLite
@@ -18,14 +19,12 @@ namespace SDVModCollector.Data.SQLite
       command.PrepTableMods();
       command.PrepTableModVersions();
       command.PrepTableObjects();
+      command.PrepTableBigCraftables();
+      command.PrepTableCrops();
+      command.PrepTableFurniture();
       connection.Close();
     }
-
-    public static string SanitizeString(this string command)
-    {
-      return command.Replace("'", "''");
-    }
-
+    
     private static int ExecuteNonQuery(this IDbCommand command, string commandText)
     {
       command.CommandText = commandText;
@@ -47,14 +46,7 @@ namespace SDVModCollector.Data.SQLite
     private static void PrepTableObjects(this IDbCommand command)
     {
       command.ExecuteNonQuery(Constants.CreateTableObjects);
-      var jsStream = Assembly.GetAssembly(typeof(VanillaData))
-        .GetManifestResourceStream("SDVModCollector.Data.SQLite.Raw_Data.ObjectInformation.json");
-      if (jsStream == null)
-        throw new InvalidDataException("Unable to load vanilla object data");
-      var jsObjectst = new StreamReader(jsStream).ReadToEnd();
-      var objectCollection = Newtonsoft.Json.JsonConvert.DeserializeObject<Dictionary<int, string>>(jsObjectst);
-
-      var objectQuery = string.Empty;
+      var objectCollection = GetResourceData("SDVModCollector.Data.SQLite.Raw_Data.ObjectInformation.json");
       Debug.Assert(objectCollection != null, nameof(objectCollection) + " != null");
       foreach (var objectItem in objectCollection)
       {
@@ -62,5 +54,46 @@ namespace SDVModCollector.Data.SQLite
       }
     }
 
+    private static void PrepTableBigCraftables(this IDbCommand command)
+    {
+      command.ExecuteNonQuery(Constants.CreateTableBigCraftables);
+      var objectCollection = GetResourceData("SDVModCollector.Data.SQLite.Raw_Data.BigCraftablesInformation.json");
+      Debug.Assert(objectCollection != null, nameof(objectCollection) + " != null");
+      foreach (var objectItem in objectCollection)
+      {
+        command.ExecuteNonQuery(VanillaData.CreateVanillaBigCraftableEntry(objectItem));
+      }
+    }
+
+    private static void PrepTableCrops(this IDbCommand command)
+    {
+      command.ExecuteNonQuery(Constants.CreateTableCrops);
+      var objectCollection = GetResourceData("SDVModCollector.Data.SQLite.Raw_Data.Crops.json");
+      Debug.Assert(objectCollection != null, nameof(objectCollection) + " != null");
+      foreach (var objectItem in objectCollection)
+      {
+        command.ExecuteNonQuery(VanillaData.CreateVanillaCropEntry(objectItem));
+      }
+    }
+
+    private static void PrepTableFurniture(this IDbCommand command)
+    {
+      command.ExecuteNonQuery(Constants.CreateTableFurniture);
+      var objectCollection = GetResourceData("SDVModCollector.Data.SQLite.Raw_Data.Furniture.json");
+      Debug.Assert(objectCollection != null, nameof(objectCollection) + " != null");
+      foreach (var objectItem in objectCollection)
+      {
+        command.ExecuteNonQuery(VanillaData.CreateVanillaFurnitureEntry(objectItem));
+      }
+    }
+
+    private static IDictionary<int, string> GetResourceData(string path)
+    {
+      var jsStream = Assembly.GetAssembly(typeof(VanillaData))?.GetManifestResourceStream(path);
+      if (jsStream == null)
+        throw new InvalidDataException($"Unable to load vanilla data from {path}");
+      var jsObjectst = new StreamReader(jsStream).ReadToEnd();
+      return Newtonsoft.Json.JsonConvert.DeserializeObject<Dictionary<int, string>>(jsObjectst);
+    }
   }
 }

@@ -5,10 +5,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Raw Data\BigCraftablesInformation.json" />
+    <None Remove="Raw Data\Crops.json" />
+    <None Remove="Raw Data\Furniture.json" />
     <None Remove="Raw Data\ObjectInformation.json" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Raw Data\BigCraftablesInformation.json" />
+    <EmbeddedResource Include="Raw Data\Crops.json" />
+    <EmbeddedResource Include="Raw Data\Furniture.json" />
     <EmbeddedResource Include="Raw Data\ObjectInformation.json" />
   </ItemGroup>
 
